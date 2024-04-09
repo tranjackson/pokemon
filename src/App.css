@@ -2,19 +2,77 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-custom {
+  /* Set the background image from Unsplash sourced here:display: https://unsplash.com/photos/red-and-white-ladybug-toy-on-white-and-yellow-book-dip9IIwUK6w; */
+  background-image: url("https://images.unsplash.com/photo-1613771404721-1f92d799e49f?auto=format&fit=crop&q=100&w=1920");
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  /* background-color: #D93E30; */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; /* Apply black text shadow in all directions */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 3rem; /* Custom font size */
+}
+
+.custom-text {
+  color: #D93030; /* Custom text color */
+  font-size: 2rem; /* Custom font size */
+}
+main {
+  background-color: #f2b807;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-custom {
+  background-color: #f27b35; /* custom card color */
+  border-color: #f27b35;
+  box-shadow: 2px 2px 5px rgba(242, 123, 53, 0.2); /* custom box shadow */
+  width: 100%; /* Take full width of the container */
+  padding-top: 100%; /* Top padding of 100% of the element's width */
+  position: relative; /* Needed for the content positioning */
+  border-radius: 10px; /* Custom border radius */
+}
+
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+h5 {
+  text-transform: capitalize; /* Capitalize the first letter in the Pokemon's name */
+}
+
+.header-custom {
+  background-color: #056CF2; /* custom header color */
+  border-color: #056CF2;
+  color: white;
+}
+
+.custom-thead tr {
+/* custom table header color */
+  border-color: #056CF2;
+  border-top: 3px solid #056CF2;
+  border-bottom: 3px solid #056CF2;
+}
+
+.custom-table-striped th{
+  text-transform: uppercase; /* Uppercase text */
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #d93e30;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,13 +84,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
